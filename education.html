@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Details</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="text"],
+        input[type="date"],
+        input[type="text"],
+        input[type="addr1"],
+        input[type="addr2"]
+         {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="personal-container">
+        <h2>Personal Details</h2>
+        <form action="personal.php" method="POST">
+          <h3>SSCL Details<h3>
+
+            <label for="schoolname">School Name</label>
+            <input type="text" id="sname1" name="sname1">
+
+            <label for="Mark">Mark</label>
+            <input type="text" id="mark1" name="mark1">
+
+            <label for="Year of Passing">Year of Passing</label>
+            <input type="date" id="yop" name="yop">
+            
+            <h3>HSC Details</h3>
+
+
+                 <label for="School Name">School Name</label>
+                 <input type="text" id="sname2" name="sname2">
+
+                 <label for="group">Group</label>
+                 <input type="text" id="group" name="group">
+
+                 <label for="Mark">Mark</label>
+                 <input type="text" id="mark2" name="mark2">
+                 <label for="Year of Passing">Year of Passing</label>
+                 <input type="date" id="yop2" name="yop2">
+
+            <h3>College Details<h3>
+                
+
+                <label for="School Name">College Name</label>
+                <input type="text" id="sname2" name="sname2">
+                <label for="degree">Degree</label>
+                <input type="text" id="degree" name="degree">
+                <label for="Course">Course</label>
+                <input type="text" id="course" name="course">
+                <label for="percentage">Percentage </label>
+                <input type="text" id="percentage" name="percentage">
+                <label for="Year of Passing">Year of Passing</label>
+                <input type="date" id="yop3" name="yop3">
+
+                <input type="submit" value="Save Education details">
+
+        </form>
+    </div>
+</body>
+</html>

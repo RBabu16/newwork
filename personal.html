@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="text"],
+        input[type="date"],
+        input[type="text"],
+        input[type="addr1"],
+        input[type="addr2"]
+         {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="personal-container">
+        <h2>Personal Details</h2>
+        <form action="personal.php" method="POST">
+
+            <label for="aadhar">Aadhar Number</label>
+            <input type="text" id="aadhar" name="aadhar" required>
+
+            <label for="pan">PAN Number</label>
+            <input type="text" id="pan" name="pan" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="father">Father Name</label>
+            <input type="text" id="father" name="father" required>
+
+            <label for="present">Present Address</label>
+            <input type="text" id="addr1" name="addr1" required>
+
+            <label for="temp">Temporary Address</label>
+            <input type="text" id="addr2" name="addr2" required>
+
+            <input type="submit" value="Save Personal Details">
+
+        </form>
+    </div>
+</body>
+</html>
